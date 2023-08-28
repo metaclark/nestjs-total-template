@@ -6,7 +6,6 @@ import {
   ArgumentsHost,
   BadRequestException,
   Catch,
-  HttpException,
   HttpStatus,
 } from '@nestjs/common';
 import { BaseExceptionFilter } from '@nestjs/core';
