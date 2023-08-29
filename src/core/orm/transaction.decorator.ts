@@ -1,5 +1,4 @@
 import { MikroORM } from '@mikro-orm/core';
-import { SetMetadata } from '@nestjs/common';
 
 import { getMikroOrm } from '../di/orm';
 
@@ -64,6 +63,3 @@ export function TransactionalWithContext<T>(): MethodDecorator {
     return descriptor;
   };
 }
-
-export const NoTransactionKey = 'notx';
-export const NoTransaction = () => SetMetadata(NoTransactionKey, true);

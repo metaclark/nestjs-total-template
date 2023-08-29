@@ -1,6 +1,6 @@
 import { success } from 'src/core/api/response';
 import { PageService } from '../services/page.service';
-import { pagesContract } from 'src/shared/api/v0/pages/contract';
+import { pagesContract } from 'api-share/api/v0/pages/contract';
 import {
   nestControllerContract,
   NestControllerInterface,

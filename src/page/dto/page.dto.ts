@@ -1,5 +1,5 @@
 import { nestControllerContract, NestRequestShapes } from '@ts-rest/nest';
-import { pagesContract } from 'src/shared/api/v0/pages/contract';
+import { pagesContract } from 'api-share/api/v0/pages/contract';
 
 const c = nestControllerContract(pagesContract);
 

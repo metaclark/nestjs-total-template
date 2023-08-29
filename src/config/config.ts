@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 import * as process from 'process';
 import { parseEnv } from 'znv';
 import { z } from 'zod';

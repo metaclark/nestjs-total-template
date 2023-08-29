@@ -1,5 +1,6 @@
 import { initContract } from '@ts-rest/core';
-import { PageZ } from 'src/shared/entities/page';
+import { PageZ } from 'api-share/entities/page';
+import { EmptyBodyZ } from 'api-share/types/zod';
 import { z } from 'zod';
 
 const basePath = '/api/v0/pages';
@@ -39,7 +40,7 @@ export const pagesContract = initContract().router({
 
   delete: {
     method: 'DELETE',
-    body: z.undefined(),
+    body: EmptyBodyZ,
     path: `${basePath}/:id`,
     responses: {
       200: z.undefined(),

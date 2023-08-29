@@ -6,7 +6,7 @@ import { setMikroOrm } from './core/di/orm';
 import { MikroORM } from '@mikro-orm/core';
 import { Logger } from 'nestjs-pino';
 import { generateOpenApi } from '@ts-rest/open-api';
-import { apiContract } from './shared/api/contract';
+import { apiContract } from 'api-share/api/contract';
 import { INestApplication } from '@nestjs/common';
 import { SwaggerModule } from '@nestjs/swagger';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
